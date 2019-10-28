@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Educação Ambiental</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            @import url(style.css);
+        </style>
+    </head>
+    <body>
+        <div id="master">
+            <div class="border-bottom">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="navgation">
+                <a class="navbar-brand" href="#">Topo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Opções
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://maverick.td.utfpr.edu.br/">Maverick</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://github.com/luksdaniel/lucasbatista.github.io">GitHub</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Bem Vindo!</button>
+            </div>
+        </nav>
+    </div>
+        <header class="masthead" id="titulo">
+            <div class="container h-100" >
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-light" id="main">Educação Ambiental</h1>
+                    <hr class="divider my-4">
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-light">Neste infográfico você encontrará alguns dados importantes sobre o Brasil, no que se refere à preservação!</p>
+                </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="page-section" id="temas">
+        <div class="container">
+            <hr class="divider my-4">
+            <h2 class="text-center mt-0" id="escolha">Escolha um tema</h2>
+            <p class="text-muted mb-5" >Basta clicar na imagem!</p>
+            <hr class="divider my-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                        <h3 class="h4 mb-2" id="desmatamento">Taxa anual de desmatamento no Brasil</h3>
+                        <img src="imgs/arvore.jpg" alt="Árvore" class="rounded-circle" id="Image1" data-toggle="modal" data-target="#desmatamentoModal">
+                        <div class="modal fade" id="desmatamentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Taxa anual de desmatamento no Brasil</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="chartDesmatamento" style="height: 300px;"></div>
+                                    <p class="small text-center text-bold-black" id="text1">Repare que nos últimos anos o desmatamento em nosso país diminuiu de forma considerável, mas ainda estamos tratando de uma quantidade gigantesca de área desmatada, e por isso devemos continuar nos esforçando para combater esse mal!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Maiores responsáveis pela destruição da Amazônia</h3>
+                        <img src="imgs/arvoreMorta.jpg" alt="Árvore Morta" class="rounded-circle" data-toggle="modal" data-target="#futuroModal">
+                        <div class="modal fade" id="futuroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Maiores responsáveis pela destruição da Amazônia
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <p>O desmatamento na Amazônia Legal brasileira atingiu 920,4 km² em junho, um aumento de 88% em comparação com o mesmo mês no ano passado. Os dados consolidados do mês foram inseridos nesta quarta-feira (3) no sistema Terra Brasilis, do Instituto Nacional de Pesquisas Espaciais (Inpe).
+
+                                        Até a terça, o balanço parcial do período entre 1º e 28 de junho mostrava um desmatamento de 769 km². Eles mostram que, só no último domingo (30), mais de 150 km² de floresta foram destruídos – no sábado (29), não houve registros no sistema.
+                                        
+                                        Junho de 2019 foi o pior mês desde que o sistema de monitoramento de alertas foi criado, em 2015.
+                                        
+                                        No total, junho de 2019 teve 2.903 alertas inseridos no Terra Brasilis, e 97% do desmatamento foi registrado em quatro estados (veja no gráfico abaixo):</p>
+                                    <div id="chartAmazonia"></div>
+                                    <p class="small text-muted">Fonte: correiodecarajas.com</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">O que podemos fazer para melhorar a situação?</h3>
+                        <img src="imgs/preservacao.jpeg" alt="preservação" class="rounded-circle" data-toggle="modal" data-target="#preservarModal">
+                        <div class="modal fade" id="preservarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">O que podemos fazer para melhorar a situação?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="text-align: left;">
+                                    <li>1- Preserve as árvores.</li>
+                                    <li>2- Cuide bem dos cursos de água.</li>
+                                    <li>3- Não pesque em épocas de reprodução.</li>
+                                    <li>4- Nunca compre animais silvestres sem registro.</li>
+                                    <li>5- Cuide bem do seu lixo.</li>
+                                    <li>6- Reutilize, reaproveite e recicle tudo que for possível.</li>
+                                    <li>7- Reduza o consumo de água. </li>
+                                    <li>8- Reduza o consumo de energia elétrica.</li>
+                                    <li>9- Evite andar apenas de carro.</li>
+                                    <li>10- Compre apenas o necessário.</li>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Sites que trabalham para preservar o meio ambiente</h3>
+                        <img src="imgs/hope.jpg" alt="Esperança" class="rounded-circle" data-toggle="modal" data-target="#esperancaModal">
+                        <div class="modal fade" id="esperancaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sites que trabalham para preservar o meio ambiente</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="text-align: left;">
+                                    <li>SOS Mata Atlântica: <a href="https://www.sosma.org.br/blog-categorias/educacao-ambiental/">www.sosma.com</a></li>
+                                    <li>WWF <a href="https://www.wwf.org.br/">wwf.org</a></li>
+                                    <li>Team Trees, A cada 1 dollar em doações, uma árvore é plantada! <a href="https://teamtrees.org/">teamtrees.org</a></li>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" >
+            <div class="container">
+                <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="container" id="mensagem">
+                        <hr class="divider my-4">
+                        <h2 class="text-light" >Com ajuda de todos conseguiremos salvar nosso planeta!</h2>
+                        <hr class="divider my-4">
+                    </div>
+                    <p class="text-muted mb-5">Agora que você já conhece os dados, que tal começar a colocar a mão na massa para preservar nosso meio ambiente?</p>
+                    <p class="text-muted mb-5">Se precisar de aujuda, abaixo está meu e-mail, mande um alô pra mim!</p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-lg-12 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="luksdanielbatista2@gmail.com">luksdanielbatista2@gmail.com</a>
+                </div>
+                </div>
+            </div>
+    </section>
+    </div>
+    <footer class="bg-light py-5" id="final">
+        <div class="container">
+            <div class="small text-center text-bold-black">Copyright &copy; 2019 - Lucas Daniel Batista</div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            const container = document.querySelector('#chartDesmatamento')
+            const data = new google.visualization.arrayToDataTable([
+                ['Anos', 'Área'],
+                [ '1995', 29000],
+                [ '1997', 13500],
+                [ '1999', 18000],
+                [ '2001', 18700],
+                [ '2003', 25500],
+                [ '2005', 19000],
+                [ '2007', 12000],
+                [ '2009', 7500],
+                [ '2011', 6500],
+                [ '2013', 5500],
+                [ '2015', 6000],
+                [ '2017', 6500],
+            ])
+            const options = {
+                title: 'taxa de desmatamento no Brasil (em Km²)',
+                height: 250,
+                width: 480,
+                animation:{
+                    startup: true,
+                    duration: 800
+                },
+                colors: ['green'],
+            }
+            const chart = new google.visualization.ColumnChart(container)
+            chart.draw(data, options)
+        }
+
+        google.charts.setOnLoadCallback(drawChart2);
+            function drawChart2() {
+            const container2 = document.querySelector('#chartAmazonia')
+            const data2 = new google.visualization.arrayToDataTable([
+                ['Estados', 'Porcentagem'],
+                ['Pará', 48.58],
+                ['Amazonas', 21.01],
+                ['Mato Grosso', 16.69],
+                ['Rondônia', 10.81],
+                ['Outros', 2.96],
+            ])
+            const options2 = {
+                title: 'àrea desmatada da amazônia por estados',
+                height: 350,
+                width: 480,
+                is3D: true,
+                animation:{
+                    startup: true,
+                    duration: 1000
+                },
+                colors: ['#FF5100', '#FF8100', '#FFAA00', '#004757', '#003845']
+            }
+            const chart = new google.visualization.PieChart(container2)
+            chart.draw(data2, options2)
+        }
+    </script>
+</body>
+</html>

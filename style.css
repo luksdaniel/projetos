@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+#navgation{
+  background-image: url(imgs/backBar.png);
+}
+
+#botao{
+    color: white;
+}
+
+#main{
+  font-family: 'Viga', sans-serif;
+}
+
+#master{
+  background-image: url(imgs/backBar.png);
+}
+
+#escolha{
+  font-family: 'Viga', sans-serif;
+}
+
+#titulo{
+  padding-top: 10%;
+  padding-bottom: 8% ;
+}
+
+#temas{
+  padding-bottom: 4%;
+}
+
+#final{
+  background-image: url(imgs/grass.png) !important;
+  background-position: bottom; 
+  background-size: contain; 
+}
+
+#mensagem{
+  background-image: url(imgs/tronc2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+p{
+  text-align: center;
+}
